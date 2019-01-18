@@ -1,13 +1,3 @@
-* {  				/* afecta a todo el contenido */
-	margin: 0;
-	padding: 0;
-}
-
-header {
-}
-
-
-
   /* BARRA DE MENÚ */
 
 #nav {
@@ -341,23 +331,7 @@ text-align: center;
     -webkit-font-smoothing: antialiased;
 	display:block;
 }
-.home-quote::before {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    margin-left: 0.2em;
-    content: "“";
-    color: rgb(0, 0, 0);
-    font-size: 200px;
-    line-height: 1;
-	box-sizing: border-box;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-	box-sizing: inherit;
-	display:block;
-	height:200px;
-	width:82.0312px;
-}
+
 home-quote:after {
     position: absolute;
     width: 70%;
