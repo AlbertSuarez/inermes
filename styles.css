@@ -17,7 +17,8 @@ header {
     position: fixed;
     background-color: black;
     top: 0;
-    left: 0;
+	left: 0;
+	z-index: 1;
     align-items: center;
 }
 
@@ -93,7 +94,7 @@ header {
  .blockcontact {
 	margin-bottom: 20px;
 	margin-top: 20px;
-	display: flex;
+	display: flex !important;
   
   }
   
@@ -173,9 +174,10 @@ header {
 footer {
 	display: flex;
 	width: 100%;
-	height:50px;
+	height:100px;
 	bottom: 0;
 	background-color: black;
+	color: white;
 	align-items: center;
 }
 
@@ -278,6 +280,24 @@ footer > div {
 
 /* INICIO */
 
+
+.fondo {
+	display: block;
+	position: relative;
+  }
+  
+  .fondo::after {
+	content: "";
+	background: url('imagenes/fondo.jpg');
+	opacity: 0.13;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;   
+  }
+
 #main-index > p {
 text-align: center;	
  font-family: 'Annie Use Your Telescope';
@@ -310,3 +330,145 @@ text-align: center;
   .caraousel-tooltip-item.active {
     display: block;
   }
+
+/* QUOTE */
+.home-quote{margin: 0 auto;
+    max-width: 900px;
+    padding: 30px 16px;
+    position: relative;
+	box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+	display:block;
+}
+.home-quote::before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-left: 0.2em;
+    content: "“";
+    color: rgb(0, 0, 0);
+    font-size: 200px;
+    line-height: 1;
+	box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+	box-sizing: inherit;
+	display:block;
+	height:200px;
+	width:82.0312px;
+}
+home-quote:after {
+    position: absolute;
+    width: 70%;
+    height: 200%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.home-quote.box {
+    max-width: 750px;
+    padding: 25px 60px 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+	box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+	    display: block;
+		position: relative;
+}
+
+/* FICHA TÉCNICA */
+#table { column-count:3;
+
+
+}
+
+.proyecto-h2 {border-style: solid outset;
+	border-bottom: 2px;
+	border-width: 2px;
+}
+
+/* COOKIES */
+
+.msg-cookie{margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	background-color:rgb(244, 244, 244);
+	bottom:0px;
+	box-sizing:border-box;
+	color:rgb(0, 0, 0);
+	display:block;
+	font-family:"Open Sans", sans-serif;
+	font-size:15px;
+	font-weight:400;
+	height:93px;
+	left:360px;
+	line-height:21.4286px;
+	margin-left:0px;
+	margin-right:0px;
+	padding-bottom:10px;
+	padding-left:15px;
+	padding-right:15px;
+	padding-top:10px;
+	position:fixed;
+	text-align:center;
+	text-size-adjust:100%;
+	width:720px;
+	z-index:10000;
+	-webkit-font-smoothing:antialiased;
+	-webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+	content: "";}
+	.msg-cookie .a1 .fa-times::before {
+	content: "";
+	font-family: 'icomoon' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	display:inline;
+}
+	*:before, *:after {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+}
+.clearfix:after, .dl-horizontal dd:after, .container:after, .container-fluid:after, .row:after, .form-horizontal .form-group:after {
+clear: both;
+}
+.clearfix:before, .clearfix:after, .dl-horizontal dd:before, .dl-horizontal dd:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after, .form-horizontal .form-group:before, .form-horizontal .form-group:after {
+content: " ";
+display: table;
+}
+/* +info */
+#info { text-align:center;
+margin: 0 0 10px;
+display: block;
+font-size:18px;
+line-height: 1.39;
+margin-block-start: 1em;
+margin-block-end: 1em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+max-width: 100%;
+overflow-x: hidden;
+margin-left:290px;
+margin-right:290px;
+text-size-adjust:100%;
+
+}
+
+
+/* PIE DE PÁGINA */
+#copy {float:right;
+
+}
