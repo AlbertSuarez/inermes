@@ -472,3 +472,15 @@ text-size-adjust:100%;
 #copy {float:right;
 
 }
+
+.trailer {
+	width: 900px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+#trailer {
+	width: 900px;
+    height: 600px;
+	display: block;
+}
